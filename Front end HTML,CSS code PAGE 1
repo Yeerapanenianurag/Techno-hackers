@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ayurvedic Medicine Stores</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1><strong>Stores Near Me</strong></h1>
+        <div class="store-info">
+            <div class="store">
+                <p><strong>Store Name:</strong> Patanjali Store</p>
+                <p><strong>Availability:</strong> Yes</p>
+            </div>
+        </div>
+        <div class="store-info">
+            <div class="store">
+                <p><strong>Store Name:</strong> Aayush</p>
+                <p><strong>Availability:</strong> No</p>
+            </div>
+        </div>
+        <div class="store-info">
+            <div class="store">
+                <p><strong>Store Name:</strong> Himalaya</p>
+                <p><strong>Availability:</strong> Yes</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+CSS CODE
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #333;
+}
+
+.symptoms-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.symptom-box {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
