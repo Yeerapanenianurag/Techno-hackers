@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fever Symptom Checker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Questionare</h1>
+        <div class="question">
+            <label>1) Duration of the fever:</label>
+            <div class="options">
+                <input type="checkbox" id="yesterday"> <label for="yesterday">Yesterday</label>
+                <input type="checkbox" id="thisWeek"> <label for="thisWeek">This Week</label>
+                <input type="checkbox" id="moreThanAWeek"> <label for="moreThanAWeek">More than a Week</label>
+            </div>
+        </div>
+        <div class="question">
+            <label>2) Do you have body pains?</label>
+            <div class="options">
+                <input type="checkbox" id="bodyPainsYes"> <label for="bodyPainsYes">Yes</label>
+                <input type="checkbox" id="bodyPainsNo"> <label for="bodyPainsNo">No</label>
+            </div>
+        </div>
+        <div class="question">
+            <label>3) Are you experiencing vomitings?</label>
+            <div class="options">
+                <input type="checkbox" id="vomitingsYes"> <label for="vomitingsYes">Yes</label>
+                <input type="checkbox" id="vomitingsNo"> <label for="vomitingsNo">No</label>
+            </div>
+        </div>
+    </div>
+</body>
+<a href="page2.html"><button class="continue-button">Continue</button></a>
+</html>
+
+
+
+
+
+CSS CODE
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 16px;
+}
