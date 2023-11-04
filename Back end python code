@@ -1,0 +1,57 @@
+import random
+
+# Mock data for tests, medical stores, and Ayurvedic medicines
+tests = ["Blood Test" "Urine Analysis", "X-ray", "CT Scan", "MRI"]
+medical_stores = {
+    "Medical Store 1": "bhaskar medical,moinabad",
+    "Medical Store 2": "renova,suncity",
+    "Medical Store 3": "789 Oak St",
+}
+ayurvedic_medicines = ["promegranate drink","gandharvahastadi kashaya","gulachyadi kashayam","laxative","nirugandi oil""nirugandi leaves paste","ajwan water","ginger","Shankha prakshalana","Mukta pishti","Chandraprabha vati","aamvatantak churna"]
+def recommend_tests(questionnaire_answers):
+    # Based on the questionnaire answers, suggest tests (mock data)
+    suggested_tests = random.sample(tests, random.randint(1, len(tests)))
+    return suggested_tests
+
+def find_medical_stores(location):
+    # Find nearby medical stores (mock data)
+    return {name: address for name, address in medical_stores.items()}
+
+def recommend_ayurvedic_medicines(symptoms):
+    # Suggest Ayurvedic medicines based on symptoms (mock data)
+    suggested_medicines = random.sample(ayurvedic_medicines, random.randint(1, len(ayurvedic_medicines)))
+    return suggested_medicines
+
+def main():
+    print("Welcome to the Medication Recommendation App!")
+    name = input("Please enter your name: ")
+
+    print("\nLet's start with a brief questionnaire to understand your condition.")
+    # You can create a more elaborate questionnaire with specific questions here.
+    # For simplicity, we'll use a single input for symptoms.
+    symptoms = input("Please describe your symptoms: ")
+
+    # Suggest tests based on symptoms
+    recommended_tests = recommend_tests(symptoms)
+    print("\nRecommended Tests:")
+    for test in recommended_tests:
+        print(test)
+
+    # Suggest Ayurvedic medicines based on symptoms
+    suggested_medicines = recommend_ayurvedic_medicines(symptoms)
+    print("\nSuggested Ayurvedic Medicines:")
+    for medicine in suggested_medicines:
+        print(medicine)
+        
+        
+    location = input("Please enter your location (e.g., city or zip code): ")
+    nearby_stores = find_medical_stores(location)
+    print("\nNearby Medical Stores:")
+    for name, address in nearby_stores.items():
+        print(f"{name}: {address}")
+
+    print("\nThank you for using the Medication Recommendation App, " + name + "!")
+    
+
+if _name_ == "_main_":
+    main()
