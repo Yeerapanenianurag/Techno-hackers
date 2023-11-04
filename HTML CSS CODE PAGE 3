@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medical Advice</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MEDICAL TREATMENT</h1>
+        <div class="options">
+            <p><strong>(i) Coriander Tea:</strong> Boil a handful of coriander leaves in water. Strain and drink the liquid.</p>
+            <p><strong>(ii) Ginger and Honey Paste:</strong> Make a paste by mixing ginger powder with honey. Consume a small amount of this paste a few times a day.</p>
+        </div>
+        
+        <h2>LAB TESTS</h2>
+        <div class="checkbox-option">
+            <label for="labTests">Have you undergone any lab tests?</label>
+            <input type="checkbox" id="labTests">
+        </div>
+        
+        <h2>FOOD SUGGESTIONS</h2>
+        <div class="food-suggestions">
+            <ul>
+                <li>(i) Coconut water</li>
+                <li>(ii) Fruits and vegetables that are high in vitamin C</li>
+                <li>(iii) Hot vegetable soups</li>
+            </ul>
+        </div>
+        
+        <a href="page3.html"><button class="proceed-button">proceed</button></a>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+CSS CODE
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.checkbox-option {
+    margin-top: 10px;
+}
+
+.proceed-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
